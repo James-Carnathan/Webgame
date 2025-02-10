@@ -1,20 +1,32 @@
 .App {
-  background-color: grey;
+  background-color: #282c34;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   height: 100vh;
-  position: relative;
+  color: white;
+  font-family: 'Arial', sans-serif;
 }
 
 .App h1 {
   font-size: 5vmax;
-  position: absolute;
-  top: 25px;
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
+  margin-bottom: 2vmax;
+}
+
+.App button {
+  background-color: #61dafb;
+  border: none;
+  padding: 1vmax 2vmax;
+  margin: 1vmax;
+  font-size: 2vmax;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.App button:hover {
+  background-color: #21a1f1;
 }
 
 #gameCanvas {
@@ -22,11 +34,7 @@
   display: block;
   border: 5px solid #000000;
   box-sizing: border-box;
-}
-
-.GameCanvas {
   background-color: white;
   border-radius: 10px;
-  border: 0.1vmax solid black;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
